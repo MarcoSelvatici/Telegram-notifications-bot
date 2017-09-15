@@ -41,7 +41,7 @@ def register_new_user(update):
     print("New user:", name)
 
 def instagram_notifications(user):
-    driver = webdriver.PhantomJS(executable_path='C:/Users/marco/Downloads/phantomjs-2.1.1-windows/bin/phantomjs.exe')
+    driver = webdriver.PhantomJS(executable_path='yourPathTo/phantomjs-2.1.1-windows/bin/phantomjs.exe')
     url = 'https://www.instagram.com/'
     driver.get(url)
     driver.find_element_by_class_name('_fcn8k').click()  # already got an account
@@ -71,7 +71,7 @@ def instagram_notifications(user):
     driver.quit()
 
 def facebook_notifications(user):
-    driver = webdriver.PhantomJS(executable_path='C:/Users/marco/Downloads/phantomjs-2.1.1-windows/bin/phantomjs.exe')
+    driver = webdriver.PhantomJS(executable_path='yourPathTo/phantomjs-2.1.1-windows/bin/phantomjs.exe')
     url = 'https://www.facebook.com/'
     driver.get(url)
     # print('logging in...')
